@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+}
+main section {
+  height: 100%;
+  flex-grow: 1;
+  background-color: aqua;
+  border: 5px solid white;
+  background-size: cover;
+}
+main section:hover {
+  flex-grow: 3;
+  transition: all 0.5s ease-in-out;
+}
+main section:nth-child(1) {
+  background-image: url("https://i.pinimg.com/1200x/d3/a8/b1/d3a8b18c8d40ad8d5c37bf687999d8a6.jpg");
+  background-size: cover;
+}
+main section:nth-child(2) {
+  background-image: url(./Krish.jpeg);
+}
+main section:nth-child(3) {
+  background-image: url("https://i.pinimg.com/736x/49/27/ee/4927ee7ccfb4c53b7392a8ff86bc3bc9.jpg");
+  background-size: cover;
+}
+main section:nth-child(4) {
+  background-image: url("https://i.pinimg.com/736x/4f/c8/aa/4fc8aa74da563a4fed32bcdf475e7c35.jpg");
+  background-size: cover;
+}
+main section:nth-child(5) {
+  background-image: url("https://i.pinimg.com/1200x/ad/cd/3c/adcd3cbe4c77ea659871fef701ba0ae1.jpg");
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

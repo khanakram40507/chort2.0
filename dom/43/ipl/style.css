@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+   
+}
+main{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+h1{
+    color: white;
+    font-size: rem;
+    background-color: #540a0a;
+    padding: 10px 20px;
+    border-radius: 10px;
+   
+
+}
+#box{
+    height: 50vh;
+    width: 45vh;
+    background: rgb(45, 78, 45);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+button{
+    background: #540a0a;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:active{
+    scale: 0.95;
+}

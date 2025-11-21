@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(193, 70%, 71%);
+    padding: 20px;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: white !important;
+    border-radius: 20px;
+    box-shadow: 20px 10px 30px black !important;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.card>img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.card>h2{
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.card>button{
+    margin-top: 10px;
+    background-color: hsl(194, 29%, 42%);
+    color: white;
+    padding: 4px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700px;
+    
+}
+.card>button:hover{
+    background-color: red
+   
+}

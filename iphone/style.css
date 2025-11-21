@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+}
+#nav{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(71, 67, 67);
+    color: white;
+    font-weight: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#center{
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+#center h4{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+#center h5{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+
+}
+#links>button{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
