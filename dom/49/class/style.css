@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+main {
+    height: 100%;
+    width: 100%;
+   
+    background-color: #041c91;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.outer {
+    height: 200px;
+    width: 200px;
+    background-color: #b26587;
+
+}
+.inner1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #103f4f;
+}
+.inner2 {
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #f5e642;
+}
+
+   
