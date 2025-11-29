@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+main {
+    
+    width: 100%;
+    height: 100vh;
+    background : linear-gradient(to right bottom , #000000, #434343, #000000);  
+}
+section{
+    height: 100%;
+     width: 27vw;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #000000;    
+}
+.all-reels{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    
+}
+.all-reels::-webkit-scrollbar{
+    display: none;
+}   
+.reel{
+    height: 100%;
+    width: 100%;    
+    position: relative;  
+    overflow: hidden;  
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.reel video{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.reel .bottom{
+    padding: 30px 20px;
+    width: 100%;
+    background:  linear-gradient( #0000001d,#cac7c70d);
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    bottom: 0;
+}
+.user{
+    height: 100%;
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    gap: 1rem;
+    color:aliceblue;
+
+}
+.user h1{
+    font-size: 1rem;
+    padding-top: 1rem;
+
+}
+.bottom img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom button{
+    height: 2rem;
+    width: 4rem;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 1px;
+    background-color: #1433cd21;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    color: white;
+
+    
+}
+.bottom p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.right{
+    width: 40px;
+    padding: 1rem;
+    color: aliceblue;
+    background: linear-gradient(to right,#00000000, #000000a7);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    right:0;
+    bottom:10%;
+    /* transform: translateX(100%); */
+    
+    
+}
+.right i{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.right h4{
+    cursor: pointer;
+    font-size: 1.3 rem;
+    font-weight: 400;
+}
+.right >div{
+
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
