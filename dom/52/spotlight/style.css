@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+:root{
+    --x:100px;
+    --y:100px;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(300px at var(--x) var(--y), white 100px, black 150px);
+}
