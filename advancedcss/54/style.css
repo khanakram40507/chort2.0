@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #514d4d;
+}
+@property --rotate{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+@keyframes degRotation {
+    from{
+        --rotate:0deg;
+    }
+    to{
+        --rotate:360deg;
+    }
+}
+
+.box{
+    width: 300px;
+    height: 420px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0);
+    background: white;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(235, 139, 4, 0.998);
+    text-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background: linear-gradient(135deg, #667eea , #cb2874 ) padding-box,
+    conic-gradient(from var(--rotate), #ff7a05, #ffffff, #49cf01,white) border-box;
+    animation: degRotation 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+   
+
+}
+.box:hover{
+    box-shadow: 0 0 70px rgba(196, 25, 25, 0.5);
+    text-shadow: 0 0 50px  rgba(142, 95, 95, 0.5);
+    color: rgb(0, 0, 0);
+    animation-play-state: running;
+    
+}
+.box img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
