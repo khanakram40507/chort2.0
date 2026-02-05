@@ -1,10 +1,12 @@
 import React from 'react'
 import Count from './component/Count'
+import Bathroom from './component/Bathrooom/Bathroom'
+
 
 const App = () => {
   return (
     <div>
-      <Count />
+      <Bathroom />
     </div>
   )
 }
