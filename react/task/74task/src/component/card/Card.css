@@ -1,0 +1,19 @@
+.card{
+    height: 100%;
+    padding: 2em;
+    background-color: rgb(31, 140, 190);
+}
+.card-img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.inputData{
+background-color: rgb(199, 158, 104);
+    height: 3rem;
+    width: 90%;
+    padding-left: 10px;
+    border: 2px solid black;
+}
