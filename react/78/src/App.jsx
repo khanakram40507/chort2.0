@@ -7,7 +7,7 @@ const App = () => {
   const [name, setName] = useState('');  
  useEffect(() => {
   console.log('use effect called');
- }) // when we want to run use effect when count changes then we can pass count in dependency array
+ },[count]) // when we want to run use effect when count changes not input box ui changes then we can pass count in dependency array , [] isko denpency array kehte hai , jab bhi  hame chahate hai ki koi pariticular cheeze change hone pai , use effect run hoga , tab ham [] is array ke ander us name ko pass karte hai 
 
 
   return (
