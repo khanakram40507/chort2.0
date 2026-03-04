@@ -1,38 +1,36 @@
-// basically when we are try to change our ui then if we want some thing running in side stack then we can use use effect
 
-import React, { use, useEffect, useState } from 'react'
-;
+import React, { use, useEffect } from 'react'
+import axios from 'axios'
+import { useState } from 'react'
+
 
 const App = () => {
+  const [num, setNum] = useState(0);
 
-  const[number1,setNumber1]=useState(0);
-  const[number2,setNumber2]=useState(0);
-  const[sum,setSum]=useState(0);
+  const[data, setData] = useState('')
 
-  useEffect(() => {
-    console.log('use effect is running');
-  },[number1])  // when we click on number 1 button then only use effect will run because we have given number1 in dependency array
- 
+
+const getData = async () => {
+  const response = await axios.get(' https://randomuser.me/api/');
+  
+  console.log((response.data.results[0].name.first)+" "+(response.data.results[0].name.last));
+  setData((response.data.results[0].name.first)+" "+(response.data.results[0].name.last));
+
+} 
+
+useEffect(() => {
+  getData();
+},[num])
+
+
 
   return (
     <div>
-     <h1>{number1}</h1>
-     <button onClick={() => setNumber1(Math.floor(Math.random() * 100))}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Number 1</button>
-
-      <br />
-      <br />
-
-      <h1>{number2}</h1>
-     <button onClick={() => setNumber2(Math.floor(Math.random() * 100))}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Number 2</button>
-
-      <br />
-      <br />
-      <h1>{sum}</h1>
-      <button onClick={() => setSum(number1+number2)}
-      className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"> Get Sum</button>
-    
+      <h1 className='text-4xl font-bold text-center'>Welcome to My App</h1>
+      <h1 className='text-2xl text-center'>{data}</h1>
+      <h1 className='text-2xl text-center'>{num}</h1>
+      <button  className='bg-green-600 w-fit text-2xl bold rounded p-4 m-4' onClick={() => setNum(num+1)}>Get dataaa</button>
+      
     </div>
   )
 }
