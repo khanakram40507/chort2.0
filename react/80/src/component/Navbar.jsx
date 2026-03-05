@@ -8,6 +8,8 @@ const Navbar = () => {
       <div className='w-fit text-xl bold  flex gap-4'>
         <NavLink to="/" style={({ isActive }) => ({color: isActive ? 'blue': 'white'})}>Home</NavLink>    {/** extra ke liye go to react router dom  */}
         <NavLink to="/about" style={({ isActive }) => ({color: isActive ? 'blue': 'white'})}>About</NavLink>
+        <NavLink to="/contact" style={({ isActive }) => ({color: isActive ? 'blue': 'white'})}>Contact</NavLink>
+        <NavLink to="/course" style={({ isActive }) => ({color: isActive ? 'blue': 'white'})}>Course</NavLink>
         </div>
     </div>
   )
