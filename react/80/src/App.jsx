@@ -8,6 +8,7 @@ import Course from './pages/Course'
 import Kodr from './pages/Kodr'
 import Kodex from './pages/Kodex'
 import AllCourse from './pages/AllCourse'
+import Footer from './component/Footer'
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
         </Route>
         
       </Routes>
-        
+        <Footer/>
       
 
 

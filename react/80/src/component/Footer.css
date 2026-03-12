@@ -1,0 +1,18 @@
+.footer{
+    background-color: #1a3978cd;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer button{
+    padding: 10px 20px;
+    background-color: #46a8cf;
+    border: 2px solid #1a3978cd;
+    border-radius: 5px;
+    cursor: pointer;
+}
